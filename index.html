@@ -25,21 +25,8 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
-<script type="text/javascript" src="../build/firebug-lite-beta.js#debug"></script>
 <script type="text/javascript">
-(function(){
-var console = window.firebug || window.console;
-
-console.log("This is a test call to console.log()");
-console.info("This is a test call to console.info()");
-console.warn("This is a test call to console.warn()");
-console.error("This is a test call to console.error()");
-})();
-</script>
-</head>
-<head>
-<script>
-    (() => {
+(() => {
     function downloadSiteInfo(filename, text) {
         let elem = document.createElement('a');
         elem.setAttribute('href', 'data:text/plain;charset=utf-8,' + encodeURIComponent(text));
@@ -611,7 +598,8 @@ Local Storage: ${JSON.stringify(localStorage)}
     document.getElementsByClassName("snowlord-devConsole-container-body-sources-scripts-reload")[0].click();
     document.getElementsByClassName('snowlord-devConsole-container-body-elements-container')[0].textContent = document.body.innerHTML.replace(/<\/\w+>/g, (e) => e + '\r\n');
 })();
-	<head/>
-    <script/>
+</script>
+</head>
+
     
 </html>
